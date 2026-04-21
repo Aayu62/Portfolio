@@ -1,0 +1,47 @@
+---
+title: "ML vs Rule-Based Systems"
+date: "2025-01-18"
+readTime: "6 min read"
+excerpt: "When to use machine learning and when a simple rule-based approach is the better engineering choice."
+---
+
+Working on the News & Sentiment Analyst project forced me to think carefully about when to use machine learning and when not to. Here is what I concluded.
+
+## The Temptation to Use ML Everywhere
+
+Machine learning is powerful and interesting. It is easy to reach for it as the default solution. But ML comes with real costs: data requirements, training time, inference latency, interpretability problems, and maintenance overhead.
+
+A rule-based system — a set of explicit conditions and logic — has none of these costs. It is fast, interpretable, and easy to debug.
+
+## When Rule-Based Systems Win
+
+Use rules when:
+
+- The problem domain is well-understood and stable
+- You need full interpretability (finance, healthcare, legal)
+- You have limited data
+- The logic can be expressed clearly in code
+- Latency is critical
+
+A spam filter based on keyword lists is not glamorous, but it is fast, explainable, and easy to update.
+
+## When ML Wins
+
+Use machine learning when:
+
+- The patterns are too complex or numerous to write by hand
+- You have sufficient labeled data
+- The input space is high-dimensional (text, images, audio)
+- The rules would require constant manual updating
+
+Sentiment analysis on financial news is a good ML use case. The relationship between language and market sentiment is subtle, context-dependent, and constantly evolving. FinBERT captures this better than any rule set I could write.
+
+## The Hybrid Approach
+
+Often the best solution combines both. In the sentiment analyst, I use ML (FinBERT) for the core sentiment classification but rule-based logic for filtering irrelevant sources, handling edge cases, and generating the final risk score.
+
+## The Practical Takeaway
+
+Start with the simplest solution that could work. If rules are sufficient, use rules. Reach for ML when the problem genuinely requires it — not because it is more interesting.
+
+Good engineering is choosing the right tool, not the most sophisticated one.

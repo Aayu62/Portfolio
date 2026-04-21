@@ -1,0 +1,37 @@
+---
+title: "Understanding Minimax Through Connect 4"
+date: "2025-05-10"
+readTime: "6 min read"
+excerpt: "How game trees and heuristics can create a competitive AI opponent from scratch."
+---
+
+When I built the Connect 4 AI, I wanted to understand minimax not just theoretically but by implementing it in a real game with a real opponent. Here is what I learned.
+
+## What is Minimax?
+
+Minimax is a decision algorithm for two-player zero-sum games. One player tries to maximize their score, the other tries to minimize it. The algorithm explores all possible future moves up to a certain depth and picks the best one.
+
+In Connect 4, the maximizing player is the AI. The minimizing player is you.
+
+## Building the Game Tree
+
+At each turn, the AI generates all possible moves (up to 7 columns). For each move, it simulates the opponent's response, then its own response, and so on — building a tree of future states.
+
+The depth of this tree controls how "smart" the AI feels. A depth of 5 means the AI looks 5 moves ahead.
+
+## The Heuristic Function
+
+Pure minimax at full depth is too slow for real-time play. The solution is a **heuristic evaluation function** — a way to score a board position without playing to the end.
+
+My heuristic scores positions based on:
+- Number of connected pieces (2-in-a-row, 3-in-a-row)
+- Center column control (statistically the strongest position)
+- Blocking opponent threats
+
+## Alpha-Beta Pruning
+
+To speed things up, I added **alpha-beta pruning**. This cuts branches of the game tree that cannot possibly affect the final decision. In practice, it roughly doubles the effective search depth for the same computation time.
+
+## What This Taught Me
+
+Game AI is a great way to understand search algorithms because the feedback is immediate — you play against it and feel whether it is working. Minimax with alpha-beta pruning is elegant, and implementing it from scratch gave me a much deeper appreciation for how classical AI works before neural networks.
