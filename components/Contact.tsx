@@ -20,7 +20,7 @@ export default function Contact() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:ayushbarnwal062@example.com"
+              href="mailto:ayushbarnwal062@gmail.com"
               className="px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded transition-colors"
             >
               Email Me
