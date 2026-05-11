@@ -25,25 +25,23 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-lg text-text-muted leading-relaxed">
-              I am a third-year Computer Science and Engineering student at KIIT, with a strong focus on backend
-              development, full-stack systems, and applied machine learning.
+              I am a 3rd-year B.Tech Computer Science and Engineering student at KIIT University with a strong passion for Machine Learning, AI systems, and emerging technologies. Known for an optimistic mindset and rapid learning ability, I actively pursue projects that strengthen technical depth and real-world development skills.
             </p>
             <p className="text-lg text-text-muted leading-relaxed">
-              I enjoy designing scalable web applications, secure APIs, and intelligent software that combine
-              performance with real-world usability.
+              My expertise spans machine learning model development, neural networks, deep learning fundamentals, and building end-to-end AI systems. I combine theoretical ML knowledge with practical engineering to create intelligent solutions—from game AI with minimax search and neural networks to RAG-based research assistants and sentiment analysis systems.
             </p>
             <p className="text-lg text-text-muted leading-relaxed">
-              My work spans from real-time coding platforms and operating system simulations to machine learning
-              applications and data-driven tools.
+              I am passionate about applying AI to solve real problems: optimizing algorithms, deploying scalable systems with Docker and FastAPI, and continuously learning new tools and frameworks to push the boundaries of what's possible.
             </p>
             <p className="text-text-primary font-medium">
               I am constantly learning, building, and refining systems that solve meaningful problems.
             </p>
 
             <div className="flex flex-wrap gap-6 pt-2 text-sm text-text-muted">
-              <span>📍 Bhubaneswar</span>
-              <span>🎓 KIIT University</span>
-              <span>🔧 Backend + AI/ML</span>
+              <span>📍 Bhubaneswar, India</span>
+              <span>🎓 KIIT University (2023-2027)</span>
+              <span>🤖 Machine Learning & AI</span>
+              <span>💻 Full-Stack Engineering</span>
             </div>
           </motion.div>
         </div>

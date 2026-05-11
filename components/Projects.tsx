@@ -3,67 +3,40 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "DevArena",
-    subtitle: "Competitive Coding Platform",
+    title: "Connect 4 Web Game with AI",
+    subtitle: "Game AI with Minimax & Neural Networks",
     description:
-      "Built a full-stack competitive coding platform that enables real-time coding battles, matchmaking, and live leaderboards. Designed secure multi-language code execution using Docker and integrated Judge0 for sandboxed submissions.",
-    stack: ["React", "Spring Boot", "PostgreSQL", "Docker"],
+      "Created a Connect 4 AI with Minimax tree search and Alpha-Beta pruning, reducing branching factor to O(7²·⁵) and AI decision time to <100ms. Applied PyTorch ValueNet (3-layer MLP, 42-dim state vectors) for neural-guided position evaluation over hand-crafted heuristics. Optimized move ordering (DSA) to reduce redundant subtree evaluations by 50%.",
+    stack: ["Python", "Django", "JavaScript", "NumPy", "PyTorch"],
+    github: "https://github.com/Aayu62/Connect-4-game",
+    demo: "https://connect-4-game-9vzx.onrender.com",
+  },
+  {
+    title: "ScholarAgent AI Research Assistant",
+    subtitle: "Multi-Agent RAG System with LLM",
+    description:
+      "Built a multi-agent AI research assistant enabling semantic PDF search, contextual Q&A, citation extraction, and research report generation using Retrieval-Augmented Generation (RAG). Designed modular retrieval, summary, citation, and report agents orchestrated through LangChain pipelines. Implemented FAISS vector search with sentence-transformer embeddings for low-latency semantic retrieval from 100+ page PDFs. Deployed full-stack system using FastAPI backend, Gemini LLM inference, and Streamlit frontend in Docker containers.",
+    stack: ["Python", "FastAPI", "LangChain", "FAISS", "Gemini", "Docker", "Streamlit"],
+    github: "https://github.com/Aayu62/ScholarAgent",
+    demo: "https://github.com/Aayu62/ScholarAgent",
+  },
+  {
+    title: "Sentiment Analysis Web App",
+    subtitle: "ML-Powered Text Classification",
+    description:
+      "Developed ML web app using TF-IDF + SVM achieving ~65% accuracy. Deployed REST API with real-time predictions and integrated responsive frontend for single/multi-line input processing with aggregated sentiment output. End-to-end full-stack integration with improved UI/UX.",
+    stack: ["FastAPI", "Scikit-learn", "JavaScript", "TF-IDF", "SVM"],
+    github: "https://github.com/Aayu62/AD-13_Stock_sentiment",
+    demo: "https://ad-13-stock-sentiment.onrender.com",
+  },
+  {
+    title: "DevArena — Real-Time Coding Duel Platform",
+    subtitle: "Competitive Programming Platform",
+    description:
+      "Built backend for real-time 1v1 coding duels with match lifecycle and winner logic based on earliest correct submission. Integrated Judge0 API to execute code in 50+ languages securely. Designed PostgreSQL schema and scalable leaderboard system supporting 1,000+ users. Developed REST APIs for match creation, submissions, and user interactions.",
+    stack: ["Java", "PostgreSQL", "Judge0 API", "REST APIs"],
     github: "https://github.com/Aayu62/Devarena",
     demo: "https://github.com/Aayu62/Devarena",
-  },
-  {
-    title: "Connect 4 AI",
-    subtitle: "Game AI with Minimax",
-    description:
-      "Developed a web-based Connect 4 game with an AI opponent powered by minimax search and heuristic evaluation. Built responsive gameplay with smooth client-server interaction for real-time move updates.",
-    stack: ["Django", "Python", "JavaScript", "NumPy"],
-    github: "https://github.com/Aayu62/Connect-4-game",
-    demo: "https://github.com/Aayu62/Connect-4-game",
-  },
-  {
-    title: "Gold Price Prediction",
-    subtitle: "ML Dashboard",
-    description:
-      "Built a machine learning dashboard to analyze historical gold price trends and identify hidden market patterns. Used clustering algorithms and predictive models to generate interactive insights through a visual dashboard.",
-    stack: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
-    github: "https://github.com/Aayu62/AD_LAB_SessionalProject",
-    demo: "https://github.com/Aayu62/AD_LAB_SessionalProject",
-  },
-  {
-    title: "News & Sentiment Analyst",
-    subtitle: "AI Market Intelligence",
-    description:
-      "Created an AI-powered market sentiment system that analyzes news and social media signals across multiple sources. Combined NLP models with confidence scoring to identify market-moving events and sentiment shifts.",
-    stack: ["Python", "FinBERT", "Ollama", "NLP"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Sentiment Analysis App",
-    subtitle: "Real-time Text Classifier",
-    description:
-      "Built a sentiment classification web app that processes single and multi-line text in real time using ML models. Designed a clean frontend with a backend API for fast prediction responses.",
-    stack: ["FastAPI", "JavaScript", "Scikit-learn"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Mini Unix Shell",
-    subtitle: "Systems Programming",
-    description:
-      "Implemented a custom Unix-like shell supporting command execution, piping, redirection, and process management. Built low-level system interactions using POSIX calls to simulate operating system behavior.",
-    stack: ["C/C++", "Linux", "POSIX"],
-    github: "#",
-    demo: null,
-  },
-  {
-    title: "DeskBuddy",
-    subtitle: "IoT Study Companion",
-    description:
-      "Designed an IoT study companion robot that monitors presence and study progress using sensors. Built a responsive embedded system that improves engagement through interactive feedback.",
-    stack: ["ESP32", "C/C++", "IoT", "Sensors"],
-    github: "#",
-    demo: null,
   },
 ];
 

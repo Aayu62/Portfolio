@@ -14,9 +14,21 @@ export default function Contact() {
         >
           <h2 className="font-heading font-bold text-3xl mb-4">Let&apos;s Connect</h2>
           <p className="text-text-muted text-lg leading-relaxed mb-8">
-            I am always open to discussing technology, collaboration opportunities, and interesting ideas.
-            Open to internships, collaboration, and interesting technical discussions.
+            I am always excited to discuss AI/ML projects, technology innovations, and collaboration opportunities. Whether exploring machine learning ideas, full-stack development, or internship prospects—let&apos;s connect!
           </p>
+
+          <div className="mb-8 space-y-3 text-text-muted">
+            <p className="flex items-center justify-center gap-2">
+              <span>📧</span>
+              <a href="mailto:ayushbarnwal062@gmail.com" className="hover:text-accent transition-colors">
+                ayushbarnwal062@gmail.com
+              </a>
+            </p>
+            <p className="flex items-center justify-center gap-2">
+              <span>📱</span>
+              <span>+91-7667214728</span>
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

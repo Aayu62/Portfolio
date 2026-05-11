@@ -16,10 +16,10 @@ export default function Hero() {
               AYUSH KUMAR
             </h1>
             <p className="text-xl md:text-2xl text-text-muted mb-6">
-              Backend Developer • Full Stack Builder • AI/ML Explorer
+              AI/ML Engineer • Backend Developer • Full Stack Builder
             </p>
             <p className="text-lg text-text-muted leading-relaxed mb-8 max-w-xl">
-              I build scalable applications, intelligent systems, and software that solves practical problems.
+              Curious and highly self-driven developer with a strong focus on Machine Learning, emerging technologies, and hands-on engineering. I build intelligent systems, scalable applications, and practical AI solutions that solve real-world problems.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -46,20 +46,20 @@ export default function Hero() {
           >
             <div className="bg-card border border-border rounded-lg p-8 space-y-4 w-full max-w-md">
               <div className="flex items-center gap-3">
-                <span className="text-accent font-mono">Java</span>
-                <span className="text-text-muted">Spring Boot</span>
+                <span className="text-accent font-mono">Python</span>
+                <span className="text-text-muted">ML • PyTorch • NumPy</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-accent font-mono">Python</span>
-                <span className="text-text-muted">Machine Learning</span>
+                <span className="text-accent font-mono">FastAPI</span>
+                <span className="text-text-muted">REST APIs • LangChain</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-accent font-mono">Docker</span>
-                <span className="text-text-muted">PostgreSQL</span>
+                <span className="text-text-muted">PostgreSQL • FAISS</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-accent font-mono">React</span>
-                <span className="text-text-muted">Next.js</span>
+                <span className="text-accent font-mono">RAG & LLMs</span>
+                <span className="text-text-muted">Gemini • Streamlit</span>
               </div>
             </div>
           </motion.div>

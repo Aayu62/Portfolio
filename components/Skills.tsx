@@ -3,24 +3,32 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
-    category: "Languages",
-    items: ["Java", "Python", "C / C++", "JavaScript", "SQL"],
+    category: "Programming",
+    items: ["Python", "Java", "HTML/CSS", "JavaScript", "C/C++"],
   },
   {
-    category: "Frontend",
-    items: ["React", "HTML", "CSS", "WebSockets"],
+    category: "Machine Learning",
+    items: ["Neural Networks", "Deep Learning", "Federated Learning", "TensorFlow", "PyTorch"],
   },
   {
-    category: "Backend",
-    items: ["Spring Boot", "FastAPI", "Django", "REST APIs", "JWT Authentication"],
+    category: "ML Libraries & Tools",
+    items: ["Scikit-learn", "NumPy", "Pandas", "FAISS", "Matplotlib", "TensorFlow", "TF-IDF", "SVM"],
   },
   {
-    category: "AI / ML",
-    items: ["Scikit-learn", "Pandas", "NumPy", "FinBERT", "TF-IDF", "SVM", "K-Means", "DBSCAN"],
+    category: "Frameworks & APIs",
+    items: ["FastAPI", "Streamlit", "LangChain", "Django", "REST APIs", "Judge0 API"],
   },
   {
-    category: "Tools",
-    items: ["Docker", "Git", "GitHub", "Linux", "Postman"],
+    category: "AI & NLP",
+    items: ["RAG Systems", "LLM Integration", "Sentence Transformers", "Vector Search", "Gemini API"],
+  },
+  {
+    category: "Tools & Deployment",
+    items: ["Docker", "Git/GitHub", "Jupyter Notebook", "Postman", "Linux"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgreSQL", "MongoDB", "Vector DBs", "FAISS"],
   },
 ];
 
@@ -34,7 +42,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="font-heading font-bold text-3xl mb-12"
         >
-          Technical Skills
+          Technical Skills `Tech Stack I have worked in`
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
