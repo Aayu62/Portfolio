@@ -42,7 +42,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="font-heading font-bold text-3xl mb-12"
         >
-          Technical Skills `Tech Stack I have worked in`
+          Technical Skills
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
